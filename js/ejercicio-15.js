@@ -1,3 +1,5 @@
+/*15- Realiza un script que cuente el número de vocales que tiene un texto.*/
+
 let cadena = prompt("Ingrese una frase");
 cadena = cadena.trim().toLowerCase();
 let sumador = 0;
