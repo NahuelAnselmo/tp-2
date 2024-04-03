@@ -1,8 +1,21 @@
-/*1- Escribir un programa que solicite la edad y si es mayor de 18 años mostrar un mensaje que ya puede conducir, si la edad ingresada no es un número válido indicarlo en un mensaje. */
+/* 
+3- Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
+salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un
+guión -.
+*/
 
-const edad = 0;
+let = chistes = '';
 
+do {
+  let texto = prompt("Ingresa tu mejor chiste");
 
-for(i =  0  ; i < 18 ; i++){
-    
-}
+  if (texto == null) {
+    //terminar programa
+    break;
+  }
+
+  chistes += '-' + texto + '-';  
+  alert(`Tu chiste fue ${texto}`);
+} while (true);
+
+alert(`Tus chistes fueron ${chistes}`);
