@@ -2,7 +2,7 @@
 
 let cadena = prompt("Ingrese una frase");
 cadena = cadena.trim().toLowerCase();
-let sumador = 0;
+let sum = 0;
 if (cadena !== "") {
     for (let i = 0; i < cadena.length; i++) {
         if (
@@ -17,13 +17,13 @@ if (cadena !== "") {
             cadena[i] == "ó" ||
             cadena[i] == "ú" 
         ) {
-            sumador++;
+            sum++;
         }    
     }
-    if (sumador === 1 ) {
-        alert(`La frase tiene ${sumador} vocal`);
+    if (sum === 1 ) {
+        alert(`La frase tiene ${sum} vocal`);
     } else {
-        alert(`La frase tiene ${sumador} vocales`);
+        alert(`La frase tiene ${sum} vocales`);
     }
 }   else{
     alert('No se ingreso ninguna frase');
